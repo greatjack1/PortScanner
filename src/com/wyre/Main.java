@@ -14,6 +14,7 @@ public class Main {
         //we gotta multi thread this due to the incredible amount of time this process is taking
         for (int i = 0; i < 99999; i++) {
             System.out.println("Trying port number" + i);
+            //switch this to the ip address of the router gateway on the plane
             ScannerThread thread = new ScannerThread("172.19.248.1", i);
 
             try {
